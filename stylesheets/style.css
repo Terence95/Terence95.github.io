@@ -49,3 +49,7 @@ canvas{
 	margin-top: 30px;
 	margin-bottom: 20px;
 }
+.subscribe_link{
+	/*width: 200px;*/
+	font-size: 6px;
+}

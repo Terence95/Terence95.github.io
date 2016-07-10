@@ -208,10 +208,10 @@ a:visited{
 /* Nukun */
 .link--nukun {
 	color: #E3E8DC;
-	font-weight: 900;
+	font-weight: 100;
 	text-transform: uppercase;
 	overflow: hidden;
-	padding: 10px 0;
+	padding: 30px 0;
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
 }
@@ -669,9 +669,9 @@ a:visited{
 
 /* Yaku */
 .link--yaku {
-	color: #D3D3D3;
+	color: #D3D3D;
 	font-family: 'Playfair Display';
-	font-weight: 400;
+	font-weight: 100;
 	text-transform: uppercase;
 	font-size: 10em;
 	overflow: hidden;
@@ -684,7 +684,7 @@ a:visited{
 	height: 100%;
 	width: 100%;
 	border-width: 2px 0;
-	border-color: #282828;
+	border-color: #d3d3d3;
 	border-style: solid;
 	left: 0;
 	-webkit-transform: translate3d(-101%,0,0);
@@ -708,7 +708,7 @@ a:visited{
 }
 
 .link--yaku:hover span {
-	color: #1e1a1b;
+	color: #d3d3d3;
 	-webkit-transform: perspective(1000px) rotate3d(0,1,0,360deg);
 	transform: perspective(1000px) rotate3d(0,1,0,360deg);
 }
