@@ -1,0 +1,170 @@
+a:link,a:visited,a:focus{text-decoration: none;outline: none;}
+
+*,*:after,*:before{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+/**:after,*:before{
+	display: block;
+	content: "";
+}*/
+
+/**:after{clear: both;}*/
+
+
+
+.nav ul li a{
+	display: inline-block;
+	font-weight: 700;
+	padding: 0.15em 0.25em 0;
+	-webkit-transition:color 0.3s;
+	-moz-transition:color 0.3s;
+	-o-transition:color 0.3s;
+	transition:color 0.3s;
+	color: white;
+	font-size: 20px;
+
+}
+
+.nav a{color: rgba(0,0,0,0.3);}
+
+.nav a:hover,.nav a:focus{color: #fff;}
+
+/*toolipt*/
+
+.toolipt{
+	display: inline-block;
+	font-weight: 700;
+	color: rgba(0,0,0,0.3);
+	padding: 0.15em 0.25em 0;
+	position: relative;
+	z-index: 999;
+}
+
+.toolipt-content{
+	position: absolute;
+	z-index: 9999;
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	background: #fff;
+	left: 50%;
+	margin-left: -40px;
+	bottom: 100%;
+	margin-bottom: 20px;
+	text-align: center;
+	padding-top: 25px;
+	/*color:  #47a9af;*/
+	color: black;
+	opacity: 0;
+	cursor: default;
+	pointer-events:none;
+}
+
+.toolipt-content i{
+	opacity: 0;
+}
+
+.toolipt:hover .toolipt-content,
+.toolipt:hover .toolipt-content i{
+	opacity: 1;
+}
+
+.toolipt-effect-1 .toolipt-content{
+	-webkit-transform: translate3d(0,10px,0) rotate3d(1,1,1,45deg);
+	transform:translate3d(0,10px,0) rotate3d(1,1,1,45deg);
+	-webkit-transform-orign:50% 100%;
+	-webkit-transition:opacity 0.3s, -webkit-transform 0.3s;
+	transition:opacity 0.3s, transform 0.3s;
+}
+
+.toolipt-effect-1 .toolipt-content i{
+	-webkit-transform:scale3d(0,0,1);
+	transform:scale3d(0,0,1);
+	-webkit-transition:opacity 0.3s, -webkit-transform 0.3s;
+	transition:opacity 0.3s, transform 0.3s
+}
+
+.toolipt-effect-2 .toolipt-content {
+	-webkit-transform:translate3d(0,10px,0);
+	transform:translate3d(0,10px,0);
+	-webkit-transition:opacity 0.3s, -webkit-transform 0.3s;
+	transition:opacity 0.3s, transform 0.3s;
+}
+
+.toolipt-effect-2 .toolipt-content i{
+	-webkit-transform:translate3d(0,15px,0);
+	transform:translate3d(0,15px,0);
+	-webkit-transition:opacity 0.3s, -webkit-transform 0.3s;
+	transition:opacity 0.3s, transform 0.3s;
+}
+
+.toolipt-effect-3 .toolipt-content{
+	-webkit-transform:translate3d(0,10px,0) rotate3d(0,1,0,90deg);
+	transform:translate3d(0,10px,0) rotate3d(0,1,0,90deg);
+	-webkit-transfrom-orign:50% 100%;
+	transform-orign:50% 100%;
+	-webkit-transition:opacity 0.3s, -webkit-transform 0.3s;
+	transition:opacity 0.3s , transform 0.3s;
+}
+
+.toolipt-effect-4 .toolipt-content{
+	-webkit-transform:translate3d(0,-20px,0);
+	transform:translate3d(0,-20px,0);
+	-webkit-transition:opacity 0.3s, -webkit-transform:0.3s;
+	transition:opacity 0.3s, transform 0.3s;
+}
+
+.toolipt-effect-4 .toolipt-content i{
+	-webkit-transform:translate3d(0,-20px,0);
+	transform:translate3d(0,-20px,0);
+	-webkit-transition:opacity 0.3s, -webkit-transform:0.3s;
+	transition:opacity 0.3s, transform 0.3s;
+}
+
+.toolipt-effect-5 .toolipt-content{
+	-webkit-transform:scale3d(0,0,1);
+	transform:scale3d(0,0,1);
+	-webkit-transform-orign:50% 100%;
+	transfrom-orign:50% 100%;
+	-webkit-transition:opacity 0.3s, -webkit-transform 0.3s;
+	transition:opacity 0.3s,transform 0.3s;
+}
+
+.toolipt-effect-5 .toolipt-content i{
+	-webkit-transform:scale3d(0,20px,1);
+	transform:scale3d(0,20px,1);
+	-webkit-transition:opacity 0.3s, -webkit-transform 0.3s;
+	transition:opacity 0.3s,transform 0.3s;
+}
+
+
+
+
+.toolipt:hover .toolipt-content,
+.toolipt:hover .toolipt-content i{
+	pointer-event:auto;
+	-webkit-transform:translate3d(0,0,0) scale3d(1,1,1);
+	transform:translate3d(0,0,0) scale3d(1,1,1);
+}
+
+.toolipt-effect-1:hover .toolipt-content i{
+	-webkit-transform:rotate3d(1,1,1,0);
+	transform:rotate3d(1,1,1,0);
+}
+
+.toolipt-content::after{
+	display: "block";
+	content: "";
+	width: 30px;
+	height: 20px;
+	background: url(../img/toolipt1.svg) no-repeat center center;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -15px;
+	margin-top:-7px;
+}

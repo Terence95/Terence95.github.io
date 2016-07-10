@@ -1,0 +1,51 @@
+.nav{
+	padding-top: 100px;
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+  	padding-bottom: 80px;
+}
+
+.socialclick ul li{
+	display: inline-block;
+	position: relative;
+	margin: 0 10px;
+	font-size: 1em;
+	z-index: 10;
+}
+
+#particles-js canvas { position:absolute; top:0; left:0; z-index: 0}
+
+canvas{
+	display: inline-block;
+	vertical-align: border-box;
+}
+
+#front{
+	z-index: 10;
+}
+
+.title{
+	/*font-size: 30px;*/
+	color: #574e60;
+	/*margin-bottom: 0px;*/
+
+}
+
+.intro-divider{
+	margin-top: 10px;
+	width: 150px;
+	border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+	margin-bottom: px;
+}
+
+.desc{
+	font-size: 14px;
+	line-height: 10px;
+}
+
+.link_intro{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
