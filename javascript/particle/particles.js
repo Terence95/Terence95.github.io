@@ -36,7 +36,7 @@ var pJS = function(tag_id, params){
           color: '#ff0000'
         },
         polygon: {
-          nb_sides: 3
+          nb_sides: 5
         },
         image: {
           src: '',
