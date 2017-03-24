@@ -7,7 +7,7 @@
 body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
 li, dl, dt, dd, form, a, fieldset, input, th, td
 {margin: 0; padding: 0; border: 0; outline: none;}
-body *{line-height: 1.5;font-size: 100%; 
+body *{line-height: 1.5;font-size: 100%;
 	font-family: Muli,Helvetica Neue,Hiragino Sans GB,WenQuanYi Micro Hei,Microsoft Yahei,sans-serif;
     -webkit-font-smoothing: antialiased;}
 /*body {font: 100%/1.5 , Arial;}*/
@@ -6330,9 +6330,36 @@ tbody.collapse.in {
 
 #lyric{
     font-size: 16px;
+		/*animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    animation-name: typing, blink-caret;
+    animation-duration: 3.5s, 0.75s;
+    animation-timing-function: steps(40, end), step-end;
+    animation-delay: initial, initial;
+    animation-iteration-count: initial, infinite;
+    animation-direction: initial, initial;
+    animation-fill-mode: initial, initial;
+    animation-play-state: initial, initial;*/
 }
 
 #name{
     font-size: 30px;
 }
 
+#lyric {
+	width: 280px;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .1em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    	/*animation-name: typing;*/
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 280px; }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
