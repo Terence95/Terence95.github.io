@@ -3682,7 +3682,8 @@ tbody.collapse.in {
   padding: 30px 0;
   margin-bottom: 0;
   color: white;
-  background: #2e2f41 url(../images/earthbg2.png) 0 0 no-repeat;
+  /*background: #2e2f41 url(../images/earthbg2.png) 0 0 no-repeat;*/
+	background: #2e2f41;
   background-size: cover;
   text-align: center;
 }
@@ -6346,18 +6347,18 @@ tbody.collapse.in {
 }
 
 #lyric {
-	width: 280px;
+	width: 125px;
     overflow: hidden;
     border-right: .15em solid orange;
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: .1em;
-    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    animation: typing 3.5s steps(40, end), blink-caret .55s step-end infinite;
     	/*animation-name: typing;*/
 }
 @keyframes typing {
   from { width: 0 }
-  to { width: 280px; }
+  to { width: 125px; }
 }
 @keyframes blink-caret {
   from, to { border-color: transparent }
